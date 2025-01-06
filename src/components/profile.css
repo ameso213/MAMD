@@ -1,0 +1,128 @@
+/* General Container Styles */
+.profile-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Profile Header Styles */
+.profile-header {
+  text-align: left; /* Align text to the left */
+  margin-bottom: 20px;
+}
+
+.profile-header h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+.profile-message {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Profile Picture Styles */
+.profile-picture {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Add space between the picture and the button */
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 80px; /* Reduced size to 80px */
+  height: 80px; /* Ensures the aspect ratio is square */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc; /* Adjusted border thickness */
+}
+
+.profile-picture-btn {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-picture-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Profile Options Styles */
+.profile-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align text and icons to the left */
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-option span {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.profile-option:hover {
+  background-color: #eaeaea;
+  transform: translateY(-2px);
+}
+
+/* Log Out Button */
+.profile-option.logout {
+  background-color: #ffebeb;
+  border-color: #ffcccc;
+  color: #cc0000;
+}
+
+.profile-option.logout:hover {
+  background-color: #ffc2c2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 15px;
+  }
+
+  .profile-header h2 {
+    font-size: 20px;
+  }
+
+  .profile-message {
+    font-size: 13px;
+  }
+
+  .profile-img {
+    width: 60px; /* Smaller image for smaller screens */
+    height: 60px;
+  }
+
+  .profile-option {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

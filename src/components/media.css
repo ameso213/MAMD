@@ -1,0 +1,22 @@
+/* SocialMediaLinks.css */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .social-icons a {
+    color: white; /* White icons */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .social-icons a:hover {
+    color: #1DA1F2; /* Blue color for Twitter on hover, you can change this for other platforms */
+  }
+  
+  .social-icons i {
+    font-size: 30px; /* Set icon size */
+  }
+  

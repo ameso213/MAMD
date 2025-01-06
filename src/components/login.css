@@ -1,0 +1,121 @@
+/* General Styles */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .auth-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .auth-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #8B0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .auth-button:hover {
+    background-color: #a50000;
+  }
+  
+  .toggle-form {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .form-link {
+    color: #8B0000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .form-link:hover {
+    text-decoration: underline;
+  }
+  
+  .forgot-password {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .forgot-password label {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  /* Signup Form Styles */
+  .signup-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-text {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .restaurant-name {
+    font-weight: bold;
+    color: #8B0000;
+  }
+  
+  .slogan {
+    font-size: 12px;
+    color: #777;
+  }
+  
