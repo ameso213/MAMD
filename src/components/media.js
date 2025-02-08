@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import './media.css';
 
-const SocialMediaLinks = () => {
+const SocialMedia = () => {
   return (
     <div className="social-icons">
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">

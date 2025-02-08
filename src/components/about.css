@@ -1,0 +1,79 @@
+/* General Container */
+.about-us-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Headings */
+  .main-heading {
+    text-align: center;
+    color: brown;
+  }
+  
+  .sub-heading {
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  /* Sections */
+  .about-section {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Content Layout */
+  .about-content,
+  .chef-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .about-content p,
+  .chef-content p {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Images */
+  .about-image,
+  .chef-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .chef-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Video */
+  .about-video {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .about-content,
+    .chef-content {
+      flex-direction: column;
+    }
+  
+    .about-image,
+    .about-video,
+    .chef-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

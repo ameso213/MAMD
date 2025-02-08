@@ -1,0 +1,106 @@
+.contact-us-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  h1 span {
+    color: darkred;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .contact-info {
+    position: relative;
+    padding: 20px;
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 38%;
+    right: -70px;
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    height: 300px; /* Adjust the height as needed */
+  }
+  
+  
+  
+  .contact-info h2,
+.contact-info p {
+  position: relative;
+  z-index: 2;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: 900; /* Very bold and thick text */
+}
+
+  
+  /* Apply opacity and adjust the background image with red overlay */
+  .contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../components/mam.jpeg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-color: rgba(255, 0, 0, 0.3); /* Red color overlay with 30% opacity */
+    opacity: 0.5; /* Slightly faint opacity for the overlay */
+    z-index: 1;
+  }
+  
+  .contact-form {
+    width: 40%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    /* margin-left: -700px; */
+    /* margin-left: -100px; Move the contact form slightly to the left */
+  }
+  
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: darkred;
+  }
+  
+  .map-container {
+    margin-top: 40px;
+  }
+  
+  .map-container iframe {
+    border-radius: 10px;
+  }
+  
+  /* footer {
+    text-align: center;
+    margin-top: 20px; */
+  
+  
