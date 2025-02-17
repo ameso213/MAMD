@@ -1,39 +1,14 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-
 import React from 'react';
-import Profile from './components/profile';
-import Home from './components/home'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import './App.css';
+import logo from './logo.svg';
+// import Profile from './components/profile';
+import Home from './components/home';
 import Menu from './components/menu';
-import Auth from './components/login';
+
 import OrderPage from './components/order';
 import Feedback from './components/feedback';
- import PrivacyPolicy from './components/privacy';
+import PrivacyPolicy from './components/privacy';
 import TermsOfUse from './components/terms';
 // import SocialMedia from './components/media';
 import Cart from './components/cart';
@@ -41,25 +16,42 @@ import Cart from './components/cart';
 import Footer from './components/footer';
 import ContactUs from './components/contact';
 
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <img src={logo} className="nav-logo" alt="logo" />
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        {/* <li><Link to="/profile">Profile</Link></li> */}
+        <li><Link to="/menu">Menu</Link></li>
+        {/* <li><Link to="/cart">Cart</Link></li> */}
+        <li><Link to="/order">Order</Link></li>
+        {/* <li><Link to="/feedback">Feedback</Link></li> */}
+        <li><Link to="/contact">Contact Us</Link></li>
+      </ul>
+    </nav>
+  );
+};
 
 const App = () => {
   return (
-    <div>
-      <Profile />
-      <Home/>
-      <Menu/>
-      <Auth/>
-      <Cart/>
-      <OrderPage/>
-      <Feedback/>
-       <ContactUs/> 
-      <Footer/>
-      
-       <TermsOfUse/>
-      <PrivacyPolicy/>
-       {/* <SocialMedia/>   */}
-      {/* <Cart/> */}
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/profile" element={<Profile />} /> */}
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<OrderPage />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/terms" element={<TermsOfUse />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

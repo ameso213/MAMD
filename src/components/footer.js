@@ -6,8 +6,8 @@ const Footer = ({ onLinkClick }) => {
     <footer>
       <a href="#" onClick={() => onLinkClick("Terms of Use")}>TERMS OF USE</a>
       <a href="#" onClick={() => onLinkClick("Privacy Policy")}>PRIVATE POLICY</a>
-      <a href="#" onClick={() => onLinkClick("Contact Us")}>CONTACT US</a>
-      <a href="#" onClick={() => onLinkClick("Social Media")}>SOCIAL MEDIA </a>
+      <a href="#" onClick={() => onLinkClick("feedback")}>FEEDBACK</a>
+      {/* <a href="#" onClick={() => onLinkClick("Social Media")}>SOCIAL MEDIA </a> */}
       {/* <div className="social-icons">
       <a href="#"><img src="instagram-icon.png" alt="Twitter" /></a>
         <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
